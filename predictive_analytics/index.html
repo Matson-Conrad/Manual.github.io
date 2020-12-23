@@ -1,0 +1,622 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+    
+    
+      
+        <title>Predictive Analytics - XLKit Learn User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#predictive-analytics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="XLKit Learn User Manual" class="md-header-nav__button md-logo" aria-label="XLKit Learn User Manual">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            XLKit Learn User Manual
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Predictive Analytics
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="XLKit Learn User Manual" class="md-nav__button md-logo" aria-label="XLKit Learn User Manual">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89"><path d="M3.136 17.387v42.932l42.932 21.467L3.136 17.387z"/><path d="M21.91 8l42.933 64.398-18.775 9.388L3.136 17.387 21.91 8z" fill-opacity=".5"/><path d="M67.535 17.387L40.273 35.543l21.878 32.818 5.384 2.691V17.387z"/><path d="M67.535 17.387v53.666l18.774-9.388V8l-18.774 9.387z" fill-opacity=".25"/></svg>
+
+    </a>
+    XLKit Learn User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Predictive Analytics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Predictive Analytics
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    Advanced options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-data" class="md-nav__link">
+    Selecting data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifying-a-predictive-model" class="md-nav__link">
+    Specifying a Predictive Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-predictive-models" class="md-nav__link">
+    Supported predictive models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-formula-editor" class="md-nav__link">
+    The Formula Editor
+  </a>
+  
+    <nav class="md-nav" aria-label="The Formula Editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced-xlkitlearn-formulas" class="md-nav__link">
+    Advanced XLKitLearn Formulas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-tuning" class="md-nav__link">
+    Parameter Tuning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifying-an-evaluation-set" class="md-nav__link">
+    Specifying an evaluation set
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-predictions-on-new-data" class="md-nav__link">
+    Making predictions on new data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-predictive-add-in-output" class="md-nav__link">
+    Understanding the Predictive Add-in Output
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../text_analytics/" class="md-nav__link">
+      Text Analytics
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    Advanced options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selecting-data" class="md-nav__link">
+    Selecting data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifying-a-predictive-model" class="md-nav__link">
+    Specifying a Predictive Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-predictive-models" class="md-nav__link">
+    Supported predictive models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-formula-editor" class="md-nav__link">
+    The Formula Editor
+  </a>
+  
+    <nav class="md-nav" aria-label="The Formula Editor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced-xlkitlearn-formulas" class="md-nav__link">
+    Advanced XLKitLearn Formulas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-tuning" class="md-nav__link">
+    Parameter Tuning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifying-an-evaluation-set" class="md-nav__link">
+    Specifying an evaluation set
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-predictions-on-new-data" class="md-nav__link">
+    Making predictions on new data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-predictive-add-in-output" class="md-nav__link">
+    Understanding the Predictive Add-in Output
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="predictive-analytics">Predictive Analytics</h1>
+<h2 id="getting-started">Getting started</h2>
+<p>While this is a Python-based add-in, no Python knowledge is needed nor are any downloads besides the XLKit Learn excel file.</p>
+<p>An email needs to be entered before running any analyses. Email addresses are used to track bugs. Neither email nor analyses will be shared with any outside party.</p>
+<p>The <code>Edit Settings</code> button allows the user to design analysis like selecting the data, specifying the model, determining the formulas and training criteria. Every time the model is run, the outputs are added as a new tab.</p>
+<hr />
+<h2 id="advanced-options">Advanced options</h2>
+<p>Windows users have two advanced options below the setting to give the user more control over early termination and processing speed. Mac users have <strong><em>_</em></strong><strong><em>_</em></strong></p>
+<blockquote>
+<p>If the early termination option is selected, a black Python console will pop up. Close the console to stop the analysis.</p>
+</blockquote>
+<hr />
+<h2 id="selecting-data">Selecting data</h2>
+<p>If the data can fit in an excel sheet, add the data as a new tab. "Click to Select" the range of independent and dependent data including column headers. Column headers should not include spaces.</p>
+<blockquote>
+<p>Always add data to the XLKitLearn; don't move the add-in tab to another workbook.</p>
+</blockquote>
+<p><img src="/Select_Small_Data.gif" width="600"></p>
+<p>When working with very large datasets, save the data as a csv in the same folder as XLKitLearn, and enter the data file name including  <em>.csv</em> to select the data.</p>
+<p><img src="/Select_Large_Data.gif" width="600"></p>
+<hr />
+<h2 id="specifying-a-predictive-model">Specifying a Predictive Model</h2>
+<p>XLKitLearn predictive models comprise two main ingredients:</p>
+<ol>
+<li>The predictive model to be used, and any parameters required to fit this model.</li>
+<li>The variable that needs to be predicted (the dependent variable) as well as the variables that should be used to predict it (the independent variables).</li>
+</ol>
+<p>The model can be selected among <a href="#supported-predictive-models">models available</a> in the <code>Model</code> dropdown, and its parameters can be specified in the <code>Parameter(s)</code> box below.</p>
+<p>To specify the dependent and independent variables, XLKitLearn leverages the <a href="https://patsy.readthedocs.io/en/latest/">patsy</a> library to allow the specification of these variables as a <em>Patsy formula</em> (similar but not identical to <a href="https://www.r-project.org/">R</a>-style formulas). It also adds a number of <a href="#advanced-xlkitlearn-formulas">features</a> above and beyond those available in Patsy.</p>
+<p>The basic structure of each formula is as follows:</p>
+<p><code>[Dependent Variable] ~ [Independent Variable 1] + [Independent Var. 2] + ...</code></p>
+<p>Formulas can be typed directly into the formula box of the add-in settings, or using the <a href="#the-formula-editor">formula editor</a>.</p>
+<blockquote>
+<p>Each variable should be referred to by the column headers in the first row of the <a href="#selecting-data">training data</a>.</p>
+</blockquote>
+<hr />
+<h2 id="supported-predictive-models">Supported predictive models</h2>
+<p>The following predictive models can be chosen from the dropdown.</p>
+<ol>
+<li>
+<p><strong>Linear and logistic regression</strong>: XLKitLearn will automatically determine whether a continuous <a href="https://en.wikipedia.org/wiki/Linear_regression">linear regression</a> model or a binary <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression</a> model should be used. If the dependent variable in the model contains 0s or 1s only (<em>or</em> if the dependent variable is a <a href="#logical-dependent-var">logical statement</a>), a logistic regression model will be used. Otherwise, a linear regression model will be used. Note that XLKitLearn does not support classification models with more than two possible outcomes. XLKitLearn makes one unique parameter available for these models - the <a href="https://en.wikipedia.org/wiki/Lasso_(statistics)">Lasso penalty</a>. This parameter should either be specified as a number indicating the weight of the Lasso penalty <em>or</em> can be set to <code>BS</code> to perform best subset selection. Compare multiple lasso penalties by separating entries with an <code>&amp;</code>.</p>
+</li>
+<li>
+<p><strong>Decision tree</strong>: A simple <a href="https://en.wikipedia.org/wiki/Decision_tree_learning">decision tree</a> will be fit using CART. <code>Tree depth</code> is the only unique parameter that needs to be chosen; multiple depths can be compared by separating depths with an <code>&amp;</code>.</p>
+</li>
+<li>
+<p><strong>Boosted decision tree</strong>: A boosted decision tree based on the given <code>Tree depth</code>, <code>Max trees</code> and <code>Learning rate</code>. Different tree depths can be compared by using an <code>&amp;</code>.</p>
+<blockquote>
+<p>Only the tree depth should be compared because XLKitLearn will automatically generate trees based on the max number of trees.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Random forest</strong>: Fit a random forest based on <code>Number of trees</code> and <code>Tree depth</code> which can be compared with an <code>&amp;</code>.</p>
+</li>
+</ol>
+<hr />
+<h2 id="the-formula-editor">The Formula Editor</h2>
+<p>XLKitLearn's formula editor can be accessed by clicking on the three dots to the right of the formula box in the settings. The formula editor lists all the headers in the training data on the left, and provides a larger area in which to enter a formula on the right.</p>
+<blockquote>
+<p>When data from an external file is used, Mac security settings do not allow XLKitLearn to open the file and read the headers. Thus, the formula editor will <em>not</em> work when external data is used on a Mac computer.</p>
+</blockquote>
+<p>The formula editor also supports auto-complete for quicker formula entry. As variable names are typed in the formula entry box, the list on the left is filtered down to variables that begin with those letters, and the first such variable is automatically suggested. Pressing the Tab key will complete the name of that variable:</p>
+<p><img src="/Formula_Editor.gif" width="600"></p>
+<blockquote>
+<p>As in other parts of the add-in, a red input box indicates an error in the formula; the specific error will be displayed in the area at the bottom of the formula editor.</p>
+</blockquote>
+<hr />
+<h3 id="advanced-xlkitlearn-formulas">Advanced XLKitLearn Formulas</h3>
+<p>The following advanced features are available:</p>
+<ul>
+<li>
+<p><strong>Categorical</strong>: Variables that have numerical values can be changed into categorical variables by using the following structure in the <a href="#the-formula-editor">formula editor</a> <code>C(variable_1) + variable_2....</code></p>
+<blockquote>
+<p>Any variable with text in it is automatically converted into a categorical variable with the base category dropped.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Dot formulas</strong>: Include all variables in the model by using the formula <code>y~.</code></p>
+</li>
+<li>
+<p><strong>Standardization</strong>: Standardize each variable by using the following structure <code>standard(variable_1) + standard(variable_2)....</code></p>
+</li>
+<li><strong>Python formulas</strong> @guetta I think I missed this one??</li>
+<li><strong>Removing the intercept</strong>: The intercept can be removed in the <a href="#the-formula-editor">formula editor</a> by adding a <code>-1</code> after the formula</li>
+</ul>
+<hr />
+<h2 id="parameter-tuning">Parameter Tuning</h2>
+<p>Specifying the number of folds in the settings will tell the add-in to run a <a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)">k-fold cross validation</a> with the given number of folds. The training and test data will be randomly sorted into folds based upon the <a href="https://en.wikipedia.org/wiki/Random_seed">Randomization Seed</a> then all regressions will be automatically run. The model with the highest average out-of-sample score for the training data will used on the evaluation dataset if an <a href="#Specifying_an_evaluation_set">evaluation dataset</a> is specified.</p>
+<blockquote>
+<p>Using the same <code>Randomization Seed</code> can enable two users to generate the same random order. Enter a random list of numbers once the model is finished to truly randomly sort the data.</p>
+</blockquote>
+<p>Two or more models can be compared using an <code>&amp;</code> to separate each model in the <a href="#the-formula-editor">formula editor</a>.</p>
+<hr />
+<h2 id="specifying-an-evaluation-set">Specifying an evaluation set</h2>
+<p><code>No evaluation set</code> option is selected by default. Reserve data for evaluation by either specifying the proportion of data to be set aside or by selecting a specific evaluation data set range the same way training data is selected.</p>
+<blockquote>
+<p>Be careful not to generate an evaluation output dataset that is too big for excel or it might crash.</p>
+</blockquote>
+<hr />
+<h2 id="making-predictions-on-new-data">Making predictions on new data</h2>
+<p>Make predictions on new input data using by adding data to the <code>Make predictions for new data</code> section. The model with the highest out-of-sample score is used to make predictions on the new data and the predicted outcomes will be added to the output.</p>
+<hr />
+<h2 id="understanding-the-predictive-add-in-output">Understanding the Predictive Add-in Output</h2>
+<p>The model output is dynamic based upon the model and dataset. Depending on model type and parameters not all of the following sections will be returned. The output will be separated into:</p>
+<ol>
+<li><strong>Parameter tuning</strong>: A table summarizes the results of the K-Fold Cross-Validation. Each row corresponds to the model the user inputted and shows the In-sample score, Out-of-sample score, Out-of-sample SE, Formula, Lasso penalty and the number of Nonzero coefficients.Below the summary table are two charts to visually compare the models. The first chart shows the out-of-sample score and out-of-sample score SE by the row number / model input. The second chart also shows the out-of-sample score and out-of-sample score SE by the number of non-zero coefficients.</li>
+<li><strong>Model</strong>: The model and lasso penalty is shown along with the in-sample score at the top of the model table. If single model is run, that model is used, if multiple models were compared, the model that returned the highest average out-of-sample score on the training set is returned. The model table will list each variable and the associated coefficient. When a single linear regression is run (is this correct  @guetta?) the t-stat, 97.5% confidence interval, p-value and stars indicating levels of statistical significance are also listed.</li>
+<li>
+<p><strong>Model Evaluation</strong>: Lists every predicted and true outcome for the entire evaluation dataset. The AUC cure and the out-of-sample score for the evaluation set is generated when a evaluation set is specified.</p>
+<blockquote>
+<p>Very large datasets can generate evaluation datasets that are too big for excel, so be mindful of how large your evaluation dataset when deciding to include the evaluation</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Model Prediction</strong>: The predicted outcomes for each input</p>
+<blockquote>
+<p>True outcome will not be listed because perditions are being made on inputs that don't have outcomes.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Equivalent Python code</strong>: The Python code that was used to run the analysis with descriptions for each section of code.</p>
+</li>
+<li><strong>Technical Details</strong>: The input settings that we're used to run the analysis. This can be copied and pasted directly into the "Settings" on the Add-in tab to run the exact same analysis again. The add-in version and the time for each step of the analysis are also noted.</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../text_analytics/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Text Analytics
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['toc.integrate'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
